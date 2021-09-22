@@ -7,6 +7,7 @@ server-poll-timeout 4
 dev tun
 dev-type tun
 ns-cert-type server
+setenv opt tls-version-min 1.0 or-highest
 
 remote 66.158.213.205 995 tcp
 
@@ -19,6 +20,9 @@ persist-key
 persist-tun
 client
 verb 3
+     
+comp-lzo no
+setenv PUSH_PEER_INFO
 
 <ca>
 -----BEGIN CERTIFICATE-----
