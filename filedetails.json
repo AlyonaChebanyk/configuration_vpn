@@ -23,6 +23,8 @@ verb 3
      
 comp-lzo no
 setenv PUSH_PEER_INFO
+     
+setenv CLIENT_CERT 0
 
 <ca>
 -----BEGIN CERTIFICATE-----
