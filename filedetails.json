@@ -21,6 +21,8 @@ persist-tun
 client
 verb 3
 #auth-user-pass
+     
+setenv CLIENT_CERT 0
 
 
 ###############################################################################
