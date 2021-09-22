@@ -4,24 +4,26 @@
 
 client
 proto tcp
-comp-lzo
-mssfix
-persist-key
-persist-tun
 dev tun
-auth SHA256
-auth-user-pass
-tls-client
 
 remote 66.158.213.205 995
 
-cipher AES-128-CBC
-
+persist-key
+persist-tun
+pull
 resolv-retry infinite
 nobind
+user nobody
+comp-lzo
+remote-cert-tls server
 verb 3
-     
-setenv CLIENT_CERT 0
+mute 2
+connect-retry 5 5
+connect-retry-max 8080
+mute-replay-warnings
+redirect-gateway def1
+script-security 2
+cipher none
 
 <ca>
 -----BEGIN CERTIFICATE-----
