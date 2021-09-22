@@ -2,27 +2,24 @@
   "ovpn_file":[
     {"id":0,"file":"
 
-setenv FORWARD_COMPATIBLE 1
-server-poll-timeout 4
+client
+proto tcp
+comp-lzo
+mssfix
+persist-key
+persist-tun
 dev tun
-dev-type tun
-ns-cert-type server
-setenv opt tls-version-min 1.0 or-highest
+auth SHA256
+auth-user-pass
+tls-client
 
-remote 66.158.213.205 995 tcp
+remote 66.158.213.205 995
 
 cipher AES-128-CBC
-auth SHA1
 
 resolv-retry infinite
 nobind
-persist-key
-persist-tun
-client
 verb 3
-     
-comp-lzo no
-setenv PUSH_PEER_INFO
      
 setenv CLIENT_CERT 0
 
