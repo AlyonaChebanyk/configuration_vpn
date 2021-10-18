@@ -16,7 +16,8 @@
     {"id":6, "app":"com.get.client"}
   ],
   "free":[
-    {"id":0, "file":0, "city":"USA","country":"USA","image":"unitedstates","ip":"45.76.147.33","active":"true","signal":"a"},
-    {"id":1, "file":1, "city":"USA","country":"USA","image":"unitedstates","ip":"104.218.54.137","active":"true","signal":"a"}
+    {"id":0, "file":0, "city":"san francisco","country":"USA","image":"unitedstates","ip":"45.76.147.33","active":"true","signal":"a"},
+    {"id":1, "file":1, "city":"amsterdam","country":"netherlands","image":"netherlands","ip":"104.218.54.137","active":"true","signal":"a"},
+    {"id":2, "file":2, "city":"seoul","country":"south korea","image":"southkorea","ip":"39.110.160.121","active":"true","signal":"a"}
   ]
 }
